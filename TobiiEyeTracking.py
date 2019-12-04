@@ -55,11 +55,31 @@ df.to_csv('C:/Users/ORCL/Documents/Xiang/eye_tracking_data_python/df.csv', index
 
 ### Detect until user press a key
 
+def gaze_data(my_eyetracker):
+    global global_gaze_data
+    print("Subscribing to gaze data for eye tracker with serial number {0}.".format(my_eyetracker.serial_number))
+    my_eyetracker.subscribe_to(tr.EYETRACKER_HMD_GAZE_DATA, gaze_data_callback, as_dictionary=True)
+    
+    while True:
+        
+        if keyboard.is_pressed('q'):            
+            my_eyetracker.unsubscribe_from(tr.EYETRACKER_HMD_GAZE_DATA, gaze_data_callback)
+            print("Unsubscribed from gaze data.")
+            print("q pressed:")
+            break
+    #print(global_gaze_data)
+
+start_time = time.time()   
+gaze_data(my_eyetracker)
+end_time = time.time()
+
+file_name = str(start_time) + '-' + str(end_time) + '.csv'
+
 df = pd.DataFrame(global_gaze_data)
 
 
 
-df.to_csv('C:/Users/ORCL/Documents/Xiang/eye_tracking_data_python/df2.csv', index = False)
+df.to_csv('C:/Users/ORCL/Documents/Xiang/eye_tracking_data_python/' + file_name, index = False)
 
 
 
