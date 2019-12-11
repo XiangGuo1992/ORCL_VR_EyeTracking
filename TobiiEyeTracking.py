@@ -4,6 +4,7 @@ import tobii_research as tr
 import time
 import pandas as pd
 import keyboard
+from datetime import datetime
 # 1. Find the Eye Tracker
 found_eyetrackers = tr.find_all_eyetrackers()
 
@@ -32,9 +33,11 @@ columns = ['device_time_stamp', 'system_time_stamp', 'left_gaze_direction_unit_v
 global_gaze_data = []
 
 
+
 def gaze_data_callback(gaze_data):
     global global_gaze_data
     global_gaze_data.append(gaze_data)
+
 
 '''
 ## detect for 3 seconds
@@ -69,13 +72,18 @@ def gaze_data(my_eyetracker):
             break
     #print(global_gaze_data)
 
-start_time = time.time()   
+start_time_stamp = time.time()   
+start_datetime = datetime.now()
+
 gaze_data(my_eyetracker)
-end_time = time.time()
-
-file_name = str(start_time) + '-' + str(end_time) + '.csv'
-
 df = pd.DataFrame(global_gaze_data)
+
+
+
+end_time = time.time()
+# file_name = str(start_time_stamp) + '-' + str(end_time) + '.csv'
+
+file_name = str(start_datetime).replace(':','-') + '.csv'
 
 
 
