@@ -152,7 +152,8 @@ for gazedata in root:
 
 AdjustedTime = [(int(i)-int(DeviceTimeStamp[0]))/1000000 for i in DeviceTimeStamp]    
 d =  {'AdjustedTime':AdjustedTime,  'DeviceTimeStamp': DeviceTimeStamp, 'SystemTimeStamp':SystemTimeStamp,\
-      'GazeData_TimeStamp': GazeData_TimeStamp, 'Pose_Position':Pose_Position, \
+      #'GazeData_TimeStamp': GazeData_TimeStamp, \
+      'Pose_Position':Pose_Position, \
       'Pose_Rotation': Pose_Rotation, 'Pose_Valid':Pose_Valid, 'LeftGazeDirection':LeftGazeDirection, \
       'LeftGazeDirectionValid': LeftGazeDirectionValid, 'LeftGazeOrigin': LeftGazeOrigin, \
       'LeftGazeOriginValid': LeftGazeOriginValid, 'LeftPupilDiameter': LeftPupilDiameter, \
