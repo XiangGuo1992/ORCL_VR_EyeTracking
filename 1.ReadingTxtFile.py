@@ -9,7 +9,7 @@ import os
 import xml.etree.ElementTree as ET
 import pandas as pd
 os.chdir('C:\\research\\VR-EyeTracking')
-file_name = 'vr_data_20191204T233149.xml'
+file_name = 'vr_data_20200122T224229.xml'
 
 tree = ET.parse(file_name)
 root = tree.getroot()
