@@ -13,12 +13,12 @@ from matplotlib import pyplot as plt
 import pandas as pd
 os.chdir('C:\\research\\VR-EyeTracking')
 
-framelist = os.listdir(os.path.join('videos_frames','movie01-22-2020 224229'))
+framelist = os.listdir(os.path.join('videos_frames','movie01-25-2020 203114'))
 #number of frame images
 framelen=len(framelist)
 
 
-df = pd.read_table('vr_data_20191204T233149.csv')
+df = pd.read_table('vr_data_20200125T203114.csv')
 #length of raw data
 dflen = len(df)
 
