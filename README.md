@@ -34,12 +34,22 @@ Set up Python API as http://developer.tobiipro.com/python/python-getting-started
 
 Then run the [TobiiEyeTracking.py](TobiiEyeTracking.py) in the repository to collect the data externally (not within Unity).
 
-If an eye tracker is successfully found, the data collecting is on going until the key 'q' is pressed (you can also change it to another key in the code). An output .csv data file (name with the start and end time) will be exported into the *out_dir* defined in the code.
+If an eye tracker is successfully found, the data collecting is on going until the key 'q' is pressed (you can also change it to another key in the code). An output .csv data file (name with the start and end time like [sample_output](Data\EyeTrakcing\TobiiProPython\1575497434.5828066-1575497439.7218742.csv)) will be exported into the *out_dir* defined in the code. 
+
+```python
+output_dir = 'C:/github/ORCL_VR_EyeTracking/Data/EyeTrakcing/TobiiProPython'
+```
 
  
 
 ### Unity SDK
 
+To start with, read the document from Tobii Pro SDK (http://developer.tobiipro.com/unity.html) and download the Tobii Pro SDK for Unity
 
+1. Create a new project, or open an existing project, in Unity.
+2. Select *Assets > Import Package > Custom Package...* from the main menu, or by right-clicking in the Project window.
+3. Browse to the downloaded Tobii Pro SDK [unitypackage file](https://www.tobiipro.com/product-listing/tobii-pro-sdk/#Download), named with TobiiPro.SDK.Unity.Windows.
+4. In the next dialog, select to import all files.
+5. In the project window
 
  
