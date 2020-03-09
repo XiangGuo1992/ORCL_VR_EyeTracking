@@ -70,7 +70,7 @@ To start with, read the document from Tobii Pro SDK (http://developer.tobiipro.c
 
  In the asset store of Unity, search for "Unity Recorder", download and import. This is a free library for recording user game.
 
-![Unity Recorder](img\Recorder.jpg)
+![Unity Recorder](img/Recorder.jpg)
 
 Select *Window > General > Recorder > Recorder Window* from the main menu,
 
@@ -81,3 +81,6 @@ After setting the Recorder, press 'START RECORDING', or you may press 'F10' in t
 ![](img\Recorder3.jpg)
 
 Since we have already set for VR eye tracking data saving, the data collecting process will start at the same time. 
+
+
+https://drive.google.com/open?id=19ZlllVUZl2mWyRrg6JSof5vrMZ5ZkCz5
