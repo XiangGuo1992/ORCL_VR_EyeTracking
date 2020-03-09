@@ -6,7 +6,7 @@ import pandas as pd
 import keyboard
 from datetime import datetime
 
-output_dir = 'C:/github/ORCL_VR_EyeTracking/Data/EyeTrakcing/TobiiProPython'
+output_dir = 'C:/github/ORCL_VR_EyeTracking/Data/EyeTrakcing/TobiiProPython/'
 # 1. Find the Eye Tracker
 found_eyetrackers = tr.find_all_eyetrackers()
 
