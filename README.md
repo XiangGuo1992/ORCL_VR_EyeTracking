@@ -24,9 +24,11 @@ This repository includes sample code and tutorials for Python and Unity  API of 
 
 
 
-## Tobii Pro SDK
+## Tobii Pro SDK data collection
 
 Website of Tobii Pro SDK: http://developer.tobiipro.com/index.html
+
+You can either use Python API or Unity API to get the eye tracking data.
 
 ### Python API
 
@@ -44,15 +46,15 @@ output_dir = 'C:/github/ORCL_VR_EyeTracking/Data/EyeTrakcing/TobiiProPython'
 
 ### Unity SDK
 
-To start with, read the document from Tobii Pro SDK (http://developer.tobiipro.com/unity.html) and download the Tobii Pro SDK for Unity
+To start with, read the document from Tobii Pro SDK (http://developer.tobiipro.com/unity.html) and download the [Tobii Pro SDK for Unity](https://www.tobiipro.com/product-listing/tobii-pro-sdk/#Download).
 
 1. Create a new project, or open an existing project, in Unity.
 2. Select *Assets > Import Package > Custom Package...* from the main menu, or by right-clicking in the Project window.
-3. Browse to the downloaded Tobii Pro SDK [unitypackage file](https://www.tobiipro.com/product-listing/tobii-pro-sdk/#Download), named with TobiiPro.SDK.Unity.Windows.
+3. Browse to the downloaded Tobii Pro SDK, named with TobiiPro.SDK.Unity.Windows.
 4. In the next dialog, select to import all files.
-5. In the project window, Drag and drop the "TobiiPro\VR\Prefabs\[VREyeTracker]" prefab into the scene, in the inspector, select '**Subscribe To Gaze**'. ![prefab](img\prefabs.jpg)
+5. In the project window, Drag and drop the "TobiiPro\VR\Prefabs\[VREyeTracker]" prefab into the scene and in the inspector, select '**Subscribe To Gaze**'. ![prefab](img\prefabs.jpg)
 6. (*Not required*) Drag and drop the "TobiiPro\VR\Prefabs\[VRCalibration]" prefab into the scene. Select the [VRCalibration] prefab and in the inspector, select a key to be used to start a calibration.
-7. Drag and drop the "TobiiPro\VR\Prefabs\[VRSaveData]" prefab into the scene. Select the [VRSaveData] prefab and in the inspector, select a key to be used to start and stop saving data.
-8. 
+7. Drag and drop the "TobiiPro\VR\Prefabs\[VRSaveData]" prefab into the scene. Select the [VRSaveData] prefab and in the inspector, select a key to be used to start and stop saving data. 
+8. Play the scene, the save data
 
  
