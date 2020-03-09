@@ -42,19 +42,30 @@ If an eye tracker is successfully found, the data collecting is on going until t
 output_dir = 'C:/github/ORCL_VR_EyeTracking/Data/EyeTrakcing/TobiiProPython'
 ```
 
- 
-
-### Unity SDK
+ ### Unity SDK
 
 To start with, read the document from Tobii Pro SDK (http://developer.tobiipro.com/unity.html) and download the [Tobii Pro SDK for Unity](https://www.tobiipro.com/product-listing/tobii-pro-sdk/#Download).
 
 1. Create a new project, or open an existing project, in Unity.
+
 2. Select *Assets > Import Package > Custom Package...* from the main menu, or by right-clicking in the Project window.
+
 3. Browse to the downloaded Tobii Pro SDK, named with TobiiPro.SDK.Unity.Windows.
+
 4. In the next dialog, select to import all files.
+
 5. In the project window, Drag and drop the "TobiiPro\VR\Prefabs\[VREyeTracker]" prefab into the scene and in the inspector, select '**Subscribe To Gaze**'. ![prefab](img\prefabs.jpg)
+
 6. (*Not required*) Drag and drop the "TobiiPro\VR\Prefabs\[VRCalibration]" prefab into the scene. Select the [VRCalibration] prefab and in the inspector, select a key to be used to start a calibration.
-7. Drag and drop the "TobiiPro\VR\Prefabs\[VRSaveData]" prefab into the scene. Select the [VRSaveData] prefab and in the inspector, select a key to be used to start and stop saving data. 
-8. Play the scene, the save data
+
+7. Drag and drop the "TobiiPro\VR\Prefabs\[VRSaveData]" prefab into the scene. Select the [VRSaveData] prefab and in the inspector, select a key to be used to start and stop saving data, select 'Save Data/Save Unity Data/Save Raw Data'. 
+
+8. Play the scene, the saved XML data can be found in the "Data" folder in the project root. Press the save data key selected earlier to stop and save data.
+
+   More details can be found in the [readme.txt](readme.txt) in this repository.
+
+
+
+## Video Recording
 
  
