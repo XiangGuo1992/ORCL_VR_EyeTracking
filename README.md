@@ -68,4 +68,12 @@ To start with, read the document from Tobii Pro SDK (http://developer.tobiipro.c
 
 ## Video Recording
 
- 
+ In the asset store of Unity, search for "Unity Recorder", download and import. This is a free library for recording user game.
+
+![Unity Recorder](img\Recorder.jpg)
+
+Select *Window > General > Recorder > Recorder Window* from the main menu,
+
+
+
+After setting the Recorder, press 'START RECORDING'
