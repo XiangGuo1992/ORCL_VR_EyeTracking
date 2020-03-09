@@ -5,6 +5,8 @@ import time
 import pandas as pd
 import keyboard
 from datetime import datetime
+
+output_dir = 'C:/Users/ORCL/Documents/Xiang/eye_tracking_data_python/'
 # 1. Find the Eye Tracker
 found_eyetrackers = tr.find_all_eyetrackers()
 
@@ -86,8 +88,7 @@ end_time = time.time()
 file_name = str(start_datetime).replace(':','-') + '.csv'
 
 
-
-df.to_csv('C:/Users/ORCL/Documents/Xiang/eye_tracking_data_python/' + file_name, index = False)
+df.to_csv(output_dir + file_name, index = False)
 
 
 
