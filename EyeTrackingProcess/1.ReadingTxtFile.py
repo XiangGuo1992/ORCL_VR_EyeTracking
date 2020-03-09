@@ -10,7 +10,7 @@ import xml.etree.ElementTree as ET
 import pandas as pd
 import glob
 
-os.chdir('C:\\research\\VR-EyeTracking')
+os.chdir('C:/github/ORCL_VR_EyeTracking/Data/EyeTrakcing/TobiiProUnity/')
 txtfile_list = glob.glob('*.xml')
 
 for file_name in txtfile_list:

@@ -74,6 +74,10 @@ To start with, read the document from Tobii Pro SDK (http://developer.tobiipro.c
 
 Select *Window > General > Recorder > Recorder Window* from the main menu,
 
+![](img\Recorder2.jpg)
 
+After setting the Recorder, press 'START RECORDING', or you may press 'F10' in the keyboard for quick start.
 
-After setting the Recorder, press 'START RECORDING'
+![](img\Recorder3.jpg)
+
+Since we have already set for VR eye tracking data saving, the data collecting process will start at the same time. 
