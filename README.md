@@ -50,6 +50,8 @@ To start with, read the document from Tobii Pro SDK (http://developer.tobiipro.c
 2. Select *Assets > Import Package > Custom Package...* from the main menu, or by right-clicking in the Project window.
 3. Browse to the downloaded Tobii Pro SDK [unitypackage file](https://www.tobiipro.com/product-listing/tobii-pro-sdk/#Download), named with TobiiPro.SDK.Unity.Windows.
 4. In the next dialog, select to import all files.
-5. In the project window
+5. In the project window, Drag and drop the "TobiiPro\VR\Prefabs\[VREyeTracker]" prefab into the scene. ![prefab](img\prefabs.jpg)
+6. 
+7. 
 
  
