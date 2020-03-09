@@ -60,7 +60,7 @@ To start with, read the document from Tobii Pro SDK (http://developer.tobiipro.c
 
 7. Drag and drop the "TobiiPro\VR\Prefabs\[VRSaveData]" prefab into the scene. Select the [VRSaveData] prefab and in the inspector, select a key to be used to start and stop saving data, select 'Save Data/Save Unity Data/Save Raw Data'. 
 
-8. Play the scene, the saved XML data can be found in the "Data" folder in the project root. Press the save data key selected earlier to stop and save data.
+8. Play the scene, the saved **XML data** can be found in the "**Data**" folder in the project root. Press the save data key selected earlier to stop and save data.
 
    More details can be found in the [readme.txt](readme.txt) in this repository.
 
