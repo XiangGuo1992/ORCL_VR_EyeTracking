@@ -54,7 +54,7 @@ To start with, read the document from Tobii Pro SDK (http://developer.tobiipro.c
 
 4. In the next dialog, select to import all files.
 
-5. In the project window, Drag and drop the "TobiiPro\VR\Prefabs\[VREyeTracker]" prefab into the scene and in the inspector, select '**Subscribe To Gaze**'. ![prefab](img\prefabs.jpg)
+5. In the project window, Drag and drop the "TobiiPro\VR\Prefabs\[VREyeTracker]" prefab into the scene and in the inspector, select '**Subscribe To Gaze**'. ![prefab](img/prefabs.jpg)
 
 6. (*Not required*) Drag and drop the "TobiiPro\VR\Prefabs\[VRCalibration]" prefab into the scene. Select the [VRCalibration] prefab and in the inspector, select a key to be used to start a calibration.
 
@@ -74,13 +74,25 @@ To start with, read the document from Tobii Pro SDK (http://developer.tobiipro.c
 
 Select *Window > General > Recorder > Recorder Window* from the main menu,
 
-![](img\Recorder2.jpg)
+![](img/Recorder2.jpg)
+
+
 
 After setting the Recorder, press 'START RECORDING', or you may press 'F10' in the keyboard for quick start.
 
-![](img\Recorder3.jpg)
+![](img/Recorder3.jpg)
 
 Since we have already set for VR eye tracking data saving, the data collecting process will start at the same time. 
 
+So far, we have already set up everything for data collection. For your convenience, I also upload a sample scene for the whole process, the Google Drive Link to it is [here](https://drive.google.com/open?id=19ZlllVUZl2mWyRrg6JSof5vrMZ5ZkCz5).
 
-https://drive.google.com/open?id=19ZlllVUZl2mWyRrg6JSof5vrMZ5ZkCz5
+
+
+## Process Eye Tracking Data
+
+TODO
+
+
+
+
+
