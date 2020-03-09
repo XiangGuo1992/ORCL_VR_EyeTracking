@@ -8,7 +8,7 @@ This repository comes with the code for Tobii Eye Tracking integrated in [HTC VI
 ## Prerequisite
 
 1.  [HTC VIVE Eye Pro](https://www.vive.com/us/product/vive-pro/) with Tobii Eye Tracking system
-2.  [Unity](https://unity.com/) version 2018.4.16
+2.  [Unity](https://unity.com/) version 2018.4.16 or 2018.3.14
 3.  [Python](https://www.python.org/) 3.6.3 ([Anaconda](https://www.anaconda.com/) version recommended)
 4.  [SteamVR](https://store.steampowered.com/steamvr) 
 5.  Finish the [Set up for the HTC VIVE Eye Pro](https://enterprise.vive.com/eu/setup/vive-pro/)
@@ -82,7 +82,7 @@ After setting the Recorder, press 'START RECORDING', or you may press 'F10' in t
 
 ![](img/Recorder3.jpg)
 
-Since we have already set for VR eye tracking data saving, the data collecting process will start at the same time. 
+Since we have already set for VR eye tracking data saving, the data collecting process will start at the same time. The saved **MP4 data** can be found in the "**Recordings**" folder in the project root.
 
 So far, we have already set up everything for data collection. For your convenience, I also upload a sample scene for the whole process, the Google Drive Link to it is [here](https://drive.google.com/open?id=19ZlllVUZl2mWyRrg6JSof5vrMZ5ZkCz5).
 
@@ -90,7 +90,17 @@ So far, we have already set up everything for data collection. For your convenie
 
 ## Process Eye Tracking Data
 
-TODO
+Suppose we have XML data collected in "**Data**" folder in the project root as what I have in the '\Data\EyeTrakcing\TobiiProUnity' folder in the repository, and the videos collected in the "**Recordings**" folder in the project root as what we have in the '\Data\Video\OriginalVideo' folder in the repository. The goal of this part is to map the gaze data to the videos. 
+
+The 3 python scripts under 'EyeTrackingProcess' folder provides a workflow of processing eye tracking data. 
+
+- [1.ReadingTxtFile.py](EyeTrackingProcess/1.ReadingTxtFile.py) reads the XML file and reshape it to a more readable .csv file.
+
+- [2.PlotEyeTrackingOnImgs.py](EyeTrackingProcess/2.PlotEyeTrackingOnImgs.py) reads the .csv file in last step and try to map them in the corresponding video frames and write the images (**NOTE**: the coordinate systems of the raw eye tracking and the videos are not correctly matched). Pleas refer to '*Useful tips and hints*' on the bottom of this [page](http://developer.tobiipro.com/unity/unity-getting-started.html) and this [page](http://developer.tobiipro.com/commonconcepts/coordinatesystems.html) for more details. If you know how to match these two systems, please Contributing to Processing with Pull Requests!!!!! Thank you!
+
+- [3. Img2video.py](EyeTrackingProcess/3. Img2video.py) collects all the images and convert them back to a video with gaze like the sample output [video](Data/Video/GazeVideo/movie01-25-2020 203114.mp4) in '\Data\Video\GazeVideo'.
+
+  
 
 
 
