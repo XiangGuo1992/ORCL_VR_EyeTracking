@@ -96,7 +96,7 @@ The 3 python scripts under 'EyeTrackingProcess' folder provides a workflow of pr
 
 - [1.ReadingTxtFile.py](EyeTrackingProcess/1.ReadingTxtFile.py) reads the XML file and reshape it to a more readable .csv file.
 
-- [2.PlotEyeTrackingOnImgs.py](EyeTrackingProcess/2.PlotEyeTrackingOnImgs.py) reads the .csv file in last step and try to map them in the corresponding video frames and write the images (**NOTE**: the coordinate systems of the raw eye tracking and the videos are not correctly matched). Pleas refer to '*Useful tips and hints*' on the bottom of this [page](http://developer.tobiipro.com/unity/unity-getting-started.html) and this [page](http://developer.tobiipro.com/commonconcepts/coordinatesystems.html) for more details. If you know how to match these two systems, please Contributing to Processing with Pull Requests!!!!! Thank you!
+- [2.PlotEyeTrackingOnImgs.py](EyeTrackingProcess/2.PlotEyeTrackingOnImgs.py) reads the .csv file in last step and try to map them in the corresponding video frames and write the images (**NOTE**: the coordinate systems of the raw eye tracking and the videos are not correctly matched). Pleas refer to '*Useful tips and hints*' on the bottom of this [page](http://developer.tobiipro.com/unity/unity-getting-started.html) and this [page](http://developer.tobiipro.com/commonconcepts/coordinatesystems.html) for more details. **If you know how to match these two systems, please Contributing to Processing with Pull Requests!!!!! Thank you!**
 
 - [3.Img2video.py](EyeTrackingProcess/3.Img2video.py) collects all the images and convert them back to a video with gaze like the sample output video in '\Data\Video\GazeVideo\movie01-25-2020 203114.mp4'.
 
