@@ -68,7 +68,7 @@ To start with, read the document from Tobii Pro SDK (http://developer.tobiipro.c
 
 ## Video Recording
 
- In the asset store of Unity, search for "Unity Recorder", download and import. This is a free library for recording user game.
+ In the asset store of Unity, search for "**Unity Recorder**", download and import. This is a free library for recording user game.
 
 ![Unity Recorder](img/Recorder.jpg)
 
@@ -92,7 +92,7 @@ So far, we have already set up everything for data collection. For your convenie
 
 Suppose we have XML data collected in "**Data**" folder in the project root as what I have in the '\Data\EyeTrakcing\TobiiProUnity' folder in the repository, and the videos collected in the "**Recordings**" folder in the project root as what we have in the '\Data\Video\OriginalVideo' folder in the repository. The goal of this part is to map the gaze data to the videos. 
 
-The 3 python scripts under 'EyeTrackingProcess' folder provides a workflow of processing eye tracking data. 
+The three python scripts under 'EyeTrackingProcess' folder provides a workflow of processing eye tracking data. 
 
 - [1.ReadingTxtFile.py](EyeTrackingProcess/1.ReadingTxtFile.py) reads the XML file and reshape it to a more readable .csv file.
 
