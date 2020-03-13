@@ -12,13 +12,13 @@ import re
 from matplotlib import pyplot as plt
 import pandas as pd
 from tqdm import tqdm
-os.chdir('C:\\research\\VR-EyeTracking')
+os.chdir('C:/github/ORCL_VR_EyeTracking/Data/Video/')
 
 
 frame_dir = 'movie01-25-2020 203114'
-framelist = os.listdir(os.path.join('videos_frames',frame_dir))
+framelist = os.listdir(os.path.join('2.videos_frames',frame_dir))
 
-frame_out_dir = os.path.join('video_frames_out_LR',frame_dir)
+frame_out_dir = os.path.join('3.video_frames_out_LR',frame_dir)
 try: 
     os.mkdir(frame_out_dir)
 except:
@@ -28,8 +28,9 @@ except:
 framelen=len(framelist)
 
 # read the raw data
+csv_dir = 'C:/github/ORCL_VR_EyeTracking/Data/EyeTrakcing/TobiiProUnity/'
 csv_file = 'vr_data_20200125T203114.csv'
-df = pd.read_csv(csv_file)
+df = pd.read_csv(csv_dir + csv_file)
 
 df_valid = df[df['CombinedGazeRayWorldValid'] == True]
 #length of raw data
@@ -60,7 +61,7 @@ def return_x_y(gaze):
 
 for j in tqdm(framelist):
     i = int(re.findall("\d+",j)[0])
-    img_path = os.getcwd() + '\\videos_frames\\'  + frame_dir + '\\' + j
+    img_path = os.getcwd() + '\\2.videos_frames\\'  + frame_dir + '\\' + j
     # time from the video
     t = i/30
     # time in raw data

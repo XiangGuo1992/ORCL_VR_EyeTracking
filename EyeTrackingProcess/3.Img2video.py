@@ -11,12 +11,12 @@ import os
 import re
 from tqdm import tqdm
 
-os.chdir('C:\\research\\VR-EyeTracking\\video_frames_out_LR\\')
-out_dir = 'C:\\research\\VR-EyeTracking\\videos_out\\'
+os.chdir('C:/github/ORCL_VR_EyeTracking/Data/Video/3.video_frames_out_LR/')
+out_dir = 'C:/github/ORCL_VR_EyeTracking/Data/Video/4.Gazevideos_out/'
 fps = 30
 
 for sub_dir in tqdm(os.listdir()):
-    folder = 'C:\\research\\VR-EyeTracking\\video_frames_out_LR\\' + sub_dir
+    folder = 'C:/github/ORCL_VR_EyeTracking/Data/Video/3.video_frames_out_LR/' + sub_dir
     os.chdir(folder)
     file_list = glob.glob('*.jpg') # Get all the pngs in the current directory
     #file_list = glob.glob(folder + '/*.jpg') # Get all the pngs in the current directory
