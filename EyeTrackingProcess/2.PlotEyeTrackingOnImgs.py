@@ -61,7 +61,7 @@ def return_x_y(gaze):
 
 for j in tqdm(framelist):
     i = int(re.findall("\d+",j)[0])
-    img_path = os.getcwd() + '\\2.videos_frames\\'  + frame_dir + '\\' + j
+    img_path = os.getcwd() + '/2.videos_frames/'  + frame_dir + '/' + j
     # time from the video
     t = i/30
     # time in raw data
@@ -85,7 +85,7 @@ for j in tqdm(framelist):
         cv2.circle(img,(cv_x_l, cv_y_l), 20, (0,255,0),-1)
         cv2.circle(img,(cv_x_r,cv_y_r), 20, (255,0,0),-1)
         #plt.imshow(img)
-        cv2.imwrite(frame_out_dir + '\\' + re.findall("\d+",j)[0] +'.jpg',img)        
+        cv2.imwrite(frame_out_dir + '/' + re.findall("\d+",j)[0] +'.jpg',img)        
     
     else:
         # Find the closest time in valid raw data
@@ -108,11 +108,11 @@ for j in tqdm(framelist):
             cv2.circle(img,(cv_x_l, cv_y_l), 20, (0,255,0),-1)
             cv2.circle(img,(cv_x_r,cv_y_r), 20, (255,0,0),-1)
             #plt.imshow(img)
-            cv2.imwrite(frame_out_dir + '\\' + re.findall("\d+",j)[0] +'.jpg',img)                  
+            cv2.imwrite(frame_out_dir + '/' + re.findall("\d+",j)[0] +'.jpg',img)                  
             
         else:
             img =cv2.imread(img_path)
-            cv2.imwrite(frame_out_dir + '\\' + re.findall("\d+",j)[0] +'.jpg',img)
+            cv2.imwrite(frame_out_dir + '/' + re.findall("\d+",j)[0] +'.jpg',img)
             
 
 

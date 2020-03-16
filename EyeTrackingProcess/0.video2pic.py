@@ -29,7 +29,7 @@ for vid in videolist:
     success = True
     while success:
         success,image = vidcap.read()
-        filename = str("\\%d.jpg" % (count+1))
+        filename = str("/%d.jpg" % (count+1))
         filepath = path + filename
         cv2.imwrite(filepath, image)     # save frame as JPEG file
         count += 1
