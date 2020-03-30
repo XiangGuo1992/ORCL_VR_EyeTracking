@@ -15,6 +15,7 @@ from tqdm import tqdm
 os.chdir('C:/github/ORCL_VR_EyeTracking/Data/Video/')
 
 
+# frame_dir = 'movie03-29-2020 174423'
 frame_dir = 'movie01-25-2020 203114'
 framelist = os.listdir(os.path.join('2.videos_frames',frame_dir))
 
@@ -29,6 +30,7 @@ framelen=len(framelist)
 
 # read the raw data
 csv_dir = 'C:/github/ORCL_VR_EyeTracking/Data/EyeTrakcing/TobiiProUnity/'
+#csv_file = 'vr_data_20200329T174423.csv'
 csv_file = 'vr_data_20200125T203114.csv'
 df = pd.read_csv(csv_dir + csv_file)
 
@@ -47,15 +49,19 @@ def closest(lst, K):
 time_series = df['AdjustedTime']
 valid_time_series = df_valid['AdjustedTime']
 
-
+# Given the gaze vector, return the x/y position for the gaze point in open-cv video
 def return_x_y(gaze):
-    xyz = re.findall("\d+\.\d+", gaze)
+    pattern = "[" + '(' + ')' + "]"
+    new_gaze_string = re.sub(pattern, "", gaze)    
+    xyz = new_gaze_string.split(',')
     x= width/2*float(xyz[0])
     y = height/2*float(xyz[1])        
-    cv_x = round(width/2-x)
-    cv_y = round(height/2 -y)    
-    
+    cv_x = round(width/2 + x)
+    cv_y = round(height/2 - y)        
     return cv_x,cv_y
+
+
+
 
 
 
@@ -74,6 +80,10 @@ for j in tqdm(framelist):
         gaze_l = df['LeftGazeDirection'][t_index]
         gaze_r = df['RightGazeDirection'][t_index]
         
+        gaze_origin_l = df['LeftGazeOrigin'][t_index]
+        gaze_origin_r = df['RightGazeOrigin'][t_index]
+        
+ 
         #cv_x,cv_y = return_x_y(gaze_dir)
         cv_x_l,cv_y_l = return_x_y(gaze_l)
         cv_x_r,cv_y_r = return_x_y(gaze_r)
@@ -91,7 +101,7 @@ for j in tqdm(framelist):
         # Find the closest time in valid raw data
         t_2 = closest(list(valid_time_series), t) 
         
-        if abs(t_2 - t) <= 0.3:
+        if abs(t_2 - t) <= 0.1:
             t2_index = valid_time_series[valid_time_series == t_2].index[0]
             #gaze_dir = df['CombinedGazeRayWorldDirection'][t2_index]
             gaze_l = df['LeftGazeDirection'][t2_index]
