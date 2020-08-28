@@ -11,13 +11,13 @@ output_dir = 'C:/github/ORCL_VR_EyeTracking/Data/EyeTrakcing/TobiiProPython/'
 found_eyetrackers = tr.find_all_eyetrackers()
 
 my_eyetracker = found_eyetrackers[0]
-# tobii-ttp://VRU02-5A94AAX04179
+
 print("Address: " + my_eyetracker.address)
-# VR4_U2_P2
+
 print("Model: " + my_eyetracker.model)
-# vrg1 t2
+
 print("Name (It's OK if this is empty): " + my_eyetracker.device_name)
-# VRU02-5A94AAX04179
+
 print("Serial number: " + my_eyetracker.serial_number)
 
 '''
