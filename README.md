@@ -62,7 +62,7 @@ To start with, read the document from Tobii Pro SDK (http://developer.tobiipro.c
 
 8. Play the scene, the saved **XML data** can be found in the "**Data**" folder in the project root. Press the save data key selected earlier to stop and save data.
 
-   More details can be found in the [TobiiProVR.txt](TobiiProVR.txt) in this repository.
+   More details can be found in the [TobiiProVR_readme.txt](TobiiProVR_readme.txt) in this repository.
 
 If a XML data was created without any recorded data, check in the windows system 'Task manager' - 'Services' - 'Tobii Service' to see if it is running or not, try to restart it and collect data again.
 
