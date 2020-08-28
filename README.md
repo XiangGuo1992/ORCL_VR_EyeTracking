@@ -82,7 +82,7 @@ After import or install Unity Recorder, select *Window > General > Recorder > Re
 
 
 
-After setting the Recorder, press 'START RECORDING', or you may press 'F10' in the keyboard for quick start.
+After setting the Recorder, press 'START RECORDING', or you may press 'F10' in the keyboard for quick start. **The Frame rate is suggested to  24**. 
 
 ![](img/Recorder3.jpg)
 
@@ -94,14 +94,14 @@ So far, we have already set up everything for data collection. For your convenie
 
 ## Process Eye Tracking Data
 
-Suppose we have XML data collected in "**Data**" folder in the project root as what I have in the '\Data\EyeTrakcing\TobiiProUnity' folder in the repository, and the videos collected in the "**Recordings**" folder in the project root as what we have in the '\Data\Video\OriginalVideo' folder in the repository. The goal of this part is to map the gaze data to the videos. 
+Suppose we have XML data collected in "**Data**" folder in the project root as what I have in the '\Data\EyeTrakcing\TobiiProUnity' folder in the repository, and the videos collected in the "**Recordings**" folder in the project root as what we have in the '\Data\Video\1.Raw Videos' folder in the repository. The goal of this part is to map the gaze data to the videos. 
 
 The three python scripts under 'EyeTrackingProcess' folder provides a workflow of processing eye tracking data. 
 
 - [0.video2pic.py](EyeTrackingProcess/0.video2pic.py) Extract frame images from the videos.
 - [1.ReadingTxtFile.py](EyeTrackingProcess/1.ReadingTxtFile.py) reads the XML file and reshape it to a more readable .csv file.
-- [2.PlotEyeTrackingOnImgs.py](EyeTrackingProcess/2.PlotEyeTrackingOnImgs.py) reads the .csv file from last step and try to map them in the corresponding video frames and write the images (**NOTE**: the coordinate systems of the raw eye tracking and the videos are not correctly matched). Please refer to '*Useful tips and hints*' on the bottom of this [page](http://developer.tobiipro.com/unity/unity-getting-started.html) and this [page](http://developer.tobiipro.com/commonconcepts/coordinatesystems.html) for more details. **If you know how to match these two systems, please Contribute to Processing with Pull Requests!!!!! Thank you!**
-- [3.Img2video.py](EyeTrackingProcess/3.Img2video.py) collects all the images and convert them back to a video with gaze like the sample output video in '\Data\Video\GazeVideo\movie01-25-2020 203114.mp4'.
+- [2.PlotEyeTrackingOnImgs.py](EyeTrackingProcess/2.PlotEyeTrackingOnImgs.py) reads the .csv file from last step and try to map them in the corresponding video frames and write the images. For more information about the coordinate systems, please refer to '*Useful tips and hints*' on the bottom of this [page](http://developer.tobiipro.com/unity/unity-getting-started.html) and this [page](http://developer.tobiipro.com/commonconcepts/coordinatesystems.html) for more details. **Note**: the frame rate of the Unity Recorder should be set to **24**, otherwise there might be problems for this script (like 30FPS, other frame rate hasn't be tested).
+- [3.Img2video.py](EyeTrackingProcess/3.Img2video.py) collects all the images and convert them back to a video with gaze like the sample output video in '\Data\Video\4.Gazevideos_out\movie2020-08-2818h08m.mp4'.
 
 
 
