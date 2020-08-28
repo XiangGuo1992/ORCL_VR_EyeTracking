@@ -12,11 +12,11 @@ import re
 from matplotlib import pyplot as plt
 import pandas as pd
 from tqdm import tqdm
-os.chdir('C:/github/ORCL_VR_EyeTracking/Data/Video/')
+os.chdir('C:/research/VR-EyeTracking/Data/Video/')
 
 
 # frame_dir = 'movie03-29-2020 174423'
-frame_dir = 'movie01-25-2020 203114'
+frame_dir = 'movie05-06-2020 165228'
 framelist = os.listdir(os.path.join('2.videos_frames',frame_dir))
 
 frame_out_dir = os.path.join('3.video_frames_out_LR',frame_dir)
@@ -29,9 +29,9 @@ except:
 framelen=len(framelist)
 
 # read the raw data
-csv_dir = 'C:/github/ORCL_VR_EyeTracking/Data/EyeTrakcing/TobiiProUnity/'
+csv_dir = 'C:/research/VR-EyeTracking/Data/EyeTrakcing/TobiiProUnity/'
 #csv_file = 'vr_data_20200329T174423.csv'
-csv_file = 'vr_data_20200125T203114.csv'
+csv_file = 'vr_data_20200506T165227.csv'
 df = pd.read_csv(csv_dir + csv_file)
 
 df_valid = df[df['CombinedGazeRayWorldValid'] == True]

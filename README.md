@@ -68,11 +68,15 @@ If a XML data was created without any recorded data, check in the windows system
 
 ## Video Recording
 
- In the asset store of Unity, search for "**Unity Recorder**", download and import. This is a free library for recording user game.
+ For **Unity 2018**, in the asset store of Unity, search for "**Unity Recorder**", download and import. This is a free library for recording user game.
 
 ![Unity Recorder](img/Recorder.jpg)
 
-Select *Window > General > Recorder > Recorder Window* from the main menu,
+In Unity 2019 or newer, the Unity Recorder can be found in **Package Manager**. Go to '**Window**' - '**Package** **Manager**', click 'advance' - 'show preview packages', find the 'Unity Recorder', install. 
+
+ ![image-20200828150410628](C:\github\ORCL_VR_EyeTracking\img\UR2019.jpg)
+
+After import or install Unity Recorder, select *Window > General > Recorder > Recorder Window* from the main menu,
 
 ![](img/Recorder2.jpg)
 
