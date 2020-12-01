@@ -29,7 +29,7 @@ namespace Microsoft.MixedReality.Toolkit.Examples.Demos.EyeTracking
         string path = Path.Combine(Application.persistentDataPath, FILE_NAME);
         using (TextWriter writer = System.IO.File.CreateText(path))
         {
-            writer.WriteLine("tofiletimestamp,date_time," + "Enabled," + "HitPosition.X," + "HitPosition.Y," + "HitPosition.Z," 
+            writer.WriteLine("tofiletimestamp,date_time," + "Enabled,"  + "IsEyeCalibrationValid," + "IsEyeTrackingDataValid," +  "IsEyeTrackingEnabledAndValid,"  + "HitPosition.X," + "HitPosition.Y," + "HitPosition.Z," 
                 + "HitNormal.X," + "HitNormal.Y," + "HitNormal.Z," + "GazeOrigin.X," + "GazeOrigin.Y," + "GazeOrigin.Z," 
                 + "GazeDirection.X," + "GazeDirection.Y," + "GazeDirection.Z,"  + "HeadVelocity.X," + "HeadVelocity.Y," + "HeadVelocity.Z," 
                 + "HeadMovementDirection.X," + "HeadMovementDirection.Y," + "HeadMovementDirection.Z," + "GazeCursor.X," + "GazeCursor.Y," 
@@ -60,7 +60,8 @@ namespace Microsoft.MixedReality.Toolkit.Examples.Demos.EyeTracking
                 using (StreamWriter writer =  new StreamWriter(path,true))
             {
                             
-             writer.WriteLine(timestamp + "," + data_time + "," + gazeProvider.Enabled + ","
+             writer.WriteLine(timestamp + "," + data_time + "," + gazeProvider.Enabled + "," + CoreServices.InputSystem.EyeGazeProvider.IsEyeCalibrationValid + "," + CoreServices.InputSystem.EyeGazeProvider.IsEyeTrackingDataValid + "," 
+             + CoreServices.InputSystem.EyeGazeProvider.IsEyeTrackingEnabledAndValid + "," 
                 + gazeProvider.HitPosition.x + "," + gazeProvider.HitPosition.y + "," + gazeProvider.HitPosition.z + ","
                 + gazeProvider.HitNormal.x + "," + gazeProvider.HitNormal.y + "," + gazeProvider.HitNormal.z + ","
                  + gazeProvider.GazeOrigin.x + "," + gazeProvider.GazeOrigin.y + "," + gazeProvider.GazeOrigin.z + ","
