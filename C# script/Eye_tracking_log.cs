@@ -83,7 +83,7 @@ namespace Microsoft.MixedReality.Toolkit.Examples.Demos.EyeTracking
         void Start()
         {
             cam = GameObject.Find("MixedRealityPlayspace/Main Camera").GetComponent<Camera>();
-            cursor = GameObject.Find("MixedRealityPlayspace/DefaultCursor2(Clone)");
+            cursor = GameObject.Find("MixedRealityPlayspace/DefaultCursor(Clone)");
             
 
 
