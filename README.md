@@ -112,11 +112,11 @@ The advantage of this method is that the Unity recorder will record exact every 
 
 ### External screen recording 
 
-Many software can be used for screen recording, we use [OBS studio](https://obsproject.com/) in our study. In SteamVR, select '**Display VR view**', drag and maximize the VR view window to an idle display, then open OBS studio, add this display as a new source, as indicated in the figure below. More settings(canvas size, frequency, file names) can be found in the 'settings' option.![obsdemo](img\obsdemo.png)
+Many software can be used for screen recording, we use [OBS studio](https://obsproject.com/) in our study. In SteamVR, select '**Display VR view**', drag and maximize the VR view window to an idle display, then open OBS studio, add this display as a new source, as indicated in the figure below. More settings(canvas size, frequency, file names) can be found in the 'settings' option.![obsdemo](img/obsdemo.png)
 
 The advantage of the this method is that it can integrate different video collection systems(e.g. room cameras) with the same timestamp and frequency as shown with our lab case below.
 
-![video_collection](img\video_collection.png)
+![video_collection](img/video_collection.png)
 
 ## Sample scene
 
