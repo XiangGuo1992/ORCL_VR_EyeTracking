@@ -1,4 +1,6 @@
 # ORCL_VR_EyeTracking
+
+
 ## Introduction
 
 This repository comes with the code for Tobii Eye Tracking integrated in [HTC VIVE Eye Pro](https://enterprise.vive.com/us/product/vive-pro-eye/) in Unity, Which is a part of projects from Omni-Reality and Cognition Lab in University of Virginia (https://engineering.virginia.edu/omni-reality-and-cognition-lab).
@@ -13,6 +15,7 @@ This repository comes with the code for Tobii Eye Tracking integrated in [HTC VI
 4.  [SteamVR](https://store.steampowered.com/steamvr) 
 5.  Finish the [Set up for the HTC VIVE Eye Pro](https://enterprise.vive.com/eu/setup/vive-pro/)
 6.  [Tobii Pro SDK](http://developer.tobiipro.com/index.html) for your platform
+7.  Set up Eye Tracking Software ([SR runtime](https://www.vive.com/us/support/vive-pro-eye/category_howto/installing-eye-tracking-software.html)) if needed
 
 The HTC VIVE Eye Pro hardware (headset, controller) is from HTC VIVE, the integrated eye tracker is from Tobii, they have provided multiple ways to get access to the eye tracking data:
 
@@ -42,7 +45,7 @@ If an eye tracker is successfully found, the data collecting is on going until t
 output_dir = 'C:/github/ORCL_VR_EyeTracking/Data/EyeTrakcing/TobiiProPython'
 ```
 
- ### Unity SDK
+ ### Unity SDK (PREFERRED METHODS)
 
 To start with, read the document from Tobii Pro SDK (http://developer.tobiipro.com/unity.html) and download the [Tobii Pro SDK for Unity](https://www.tobiipro.com/product-listing/tobii-pro-sdk/#Download).
 
@@ -60,15 +63,32 @@ To start with, read the document from Tobii Pro SDK (http://developer.tobiipro.c
 
 7. Drag and drop the "TobiiPro\VR\Prefabs\[VRSaveData]" prefab into the scene. Select the [VRSaveData] prefab and in the inspector, select a key to be used to start and stop saving data, select 'Save Data/Save Unity Data/Save Raw Data'. 
 
-8. Play the scene, the saved **XML data** can be found in the "**Data**" folder in the project root. Press the save data key selected earlier to stop and save data.
+8. Save the current project.
+
+9. Play the scene, the saved **XML data** can be found in the "**Data**" folder in the project root. Press the save data key selected earlier to stop and save data.
 
    More details can be found in the [TobiiProVR_readme.txt](TobiiProVR_readme.txt) in this repository.
 
-If a XML data was created without any recorded data, check in the windows system 'Task manager' - 'Services' - 'Tobii Service' to see if it is running or not, try to restart it and collect data again.
+<del>If a XML data was created without any recorded data, check in the windows system 'Task manager' - 'Services' - 'Tobii Service' to see if it is running or not, try to restart it and collect data again.</del>
+
+**2021.05.24 update**: The correct experimental order is:
+
+1. Open SteamVR;
+2. Run room setup, make sure the controllers and headsets are in the right place;
+3. Open Unity scenarios;
+4. **Start or Restart** the **SR runtime software** right before playing the scene, this can ensure the data collection is working in case you have empty XML data;
+5. Play the scene in Unity;
+6. Stop the scene to see if all the data are collected
 
 ## Video Recording
 
- For **Unity 2018**, in the asset store of Unity, search for "**Unity Recorder**", download and import. This is a free library for recording user game.
+Their are two ways to do the video recording: **External screen recording** or **internal Unity Recorder**.
+
+### Internal Unity Recorder
+
+Different versions of Unity requires different actions. 
+
+For **Unity 2018**, in the asset store of Unity, search for "**Unity Recorder**", download and import. This is a free library for recording user game.
 
 ![Unity Recorder](img/Recorder.jpg)
 
@@ -88,9 +108,19 @@ After setting the Recorder, press 'START RECORDING', or you may press 'F10' in t
 
 Since we have already set for VR eye tracking data saving, the data collecting process will start at the same time. The saved **MP4 data** can be found in the "**Recordings**" folder in the project root.
 
-So far, we have already set up everything for data collection. For your convenience, I also upload a sample scene for the whole process, the Google Drive Link to it is [here](https://drive.google.com/open?id=19ZlllVUZl2mWyRrg6JSof5vrMZ5ZkCz5).
+The advantage of this method is that the Unity recorder will record exact every frame in the scene, however, as the frame rate of Unity during game playing is not fixed, but the video has a pre-defined fixed frame rate, it would be difficult to extract the timestamp of the experiment. For example, if the frame rate of Unity Recorder is set to 30Hz, and the actual game frame rate is ~15Hz, then the output video length will be half of the actual length. Up to 2021.1, there has been a valid solution for this issue.
 
+### External screen recording 
 
+Many software can be used for screen recording, we use [OBS studio](https://obsproject.com/) in our study. In SteamVR, select '**Display VR view**', drag and maximize the VR view window to an idle display, then open OBS studio, add this display as a new source, as indicated in the figure below. More settings(canvas size, frequency, file names) can be found in the 'settings' option.![obsdemo](C:\github\ORCL_VR_EyeTracking\img\obsdemo.png)
+
+The advantage of the this method is that it can integrate different video collection systems(e.g. room cameras) with the same timestamp and frequency as shown with our lab case below.
+
+![video_collection](C:\github\ORCL_VR_EyeTracking\img\video_collection.png)
+
+## Sample scene
+
+So far, we have already set up everything for data collection. For your convenience, I also upload a sample Unity scene for the whole process, the Google Drive Link to it is [here](https://drive.google.com/open?id=19ZlllVUZl2mWyRrg6JSof5vrMZ5ZkCz5).
 
 ## Process Eye Tracking Data
 
