@@ -6,7 +6,7 @@
 
 This repository comes with the code for Tobii Eye Tracking integrated in [HTC VIVE Eye Pro](https://enterprise.vive.com/us/product/vive-pro-eye/) in Unity, Which is a part of projects from Omni-Reality and Cognition Lab in University of Virginia (https://engineering.virginia.edu/omni-reality-and-cognition-lab).
 
-![ORCL logo](img/ORCL logo.jpg)
+![ORCL logo](img/ORCL_logo.jpg)
 
 ## Prerequisite
 
