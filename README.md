@@ -1,11 +1,12 @@
 # ORCL_VR_EyeTracking
 
 
+
 ## Introduction
 
 This repository comes with the code for Tobii Eye Tracking integrated in [HTC VIVE Eye Pro](https://enterprise.vive.com/us/product/vive-pro-eye/) in Unity, Which is a part of projects from Omni-Reality and Cognition Lab in University of Virginia (https://engineering.virginia.edu/omni-reality-and-cognition-lab).
 
-
+![ORCL logo](img/ORCL logo.jpg)
 
 ## Prerequisite
 
@@ -130,7 +131,7 @@ The three python scripts under 'EyeTrackingProcess' folder provides a workflow o
 
 - [0.video2pic.py](EyeTrackingProcess/0.video2pic.py) Extract frame images from the videos.
 - [1.ReadingTxtFile.py](EyeTrackingProcess/1.ReadingTxtFile.py) reads the XML file and reshape it to a more readable .csv file.
-- [2.PlotEyeTrackingOnImgs.py](EyeTrackingProcess/2.PlotEyeTrackingOnImgs.py) reads the .csv file from last step and try to map them in the corresponding video frames and write the images. For more information about the coordinate systems, please refer to '*Useful tips and hints*' on the bottom of this [page](http://developer.tobiipro.com/unity/unity-getting-started.html) and this [page](http://developer.tobiipro.com/commonconcepts/coordinatesystems.html) for more details. **Note**: the frame rate of the Unity Recorder should be set to **24**, otherwise there might be problems for this script (like 30FPS, other frame rate hasn't be tested).
+- [2.PlotEyeTrackingOnImgs.py](EyeTrackingProcess/2.PlotEyeTrackingOnImgs.py) reads the .csv file from last step and try to map them in the corresponding video frames and write the images. For more information about the coordinate systems, please refer to '*Useful tips and hints*' on the bottom of this [page](http://developer.tobiipro.com/unity/unity-getting-started.html) and this [page](http://developer.tobiipro.com/commonconcepts/coordinatesystems.html) for more details. <s>**Note**: the frame rate of the Unity Recorder should be set to **24**, otherwise there might be problems for this script (like 30FPS, other frame rate hasn't be tested).</s> If you are using external video recording methos such as OBS studio, you need to crop the video into separate videos first.
 - [3.Img2video.py](EyeTrackingProcess/3.Img2video.py) collects all the images and convert them back to a video with gaze like the sample output video in '\Data\Video\4.Gazevideos_out\movie2020-08-2818h08m.mp4'.
 
 
