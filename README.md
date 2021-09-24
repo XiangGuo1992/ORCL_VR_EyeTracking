@@ -8,6 +8,14 @@ This repository comes with the code for Tobii Eye Tracking integrated in [HTC VI
 
 ![ORCL logo](img/ORCL_logo.jpg)
 
+
+## Citation
+To cite our work, please cite https://engrxiv.org/mrxgh/
+
+Guo, X., Robartes, E. M., Angulo, A., Chen, T. D., & Heydarian, A. (2021, July 21). Benchmarking the Use of Immersive Virtual Bike Simulators for Understanding Cyclist Behaviors. https://doi.org/10.31224/osf.io/mrxgh
+
+
+
 ## Prerequisite
 
 1.  [HTC VIVE Eye Pro](https://www.vive.com/us/product/vive-pro/) with Tobii Eye Tracking system
