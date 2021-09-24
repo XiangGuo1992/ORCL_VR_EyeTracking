@@ -138,7 +138,7 @@ The three python scripts under 'EyeTrackingProcess' folder provides a workflow o
 
 ## Citation
 If you find the repo is useful, please cite our work https://engrxiv.org/mrxgh/
-
+```tex
  @misc{guo_robartes_angulo_chen_heydarian_2021,
   title={Benchmarking the Use of Immersive Virtual Bike Simulators for Understanding Cyclist Behaviors},
   url={engrxiv.org/mrxgh},
@@ -148,7 +148,7 @@ If you find the repo is useful, please cite our work https://engrxiv.org/mrxgh/
   year={2021},
   month={Jul}
  }
-
+```
 
 
 
