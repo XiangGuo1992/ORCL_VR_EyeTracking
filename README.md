@@ -9,13 +9,6 @@ This repository comes with the code for Tobii Eye Tracking integrated in [HTC VI
 ![ORCL logo](img/ORCL_logo.jpg)
 
 
-## Citation
-To cite our work, please cite https://engrxiv.org/mrxgh/
-
-Guo, X., Robartes, E. M., Angulo, A., Chen, T. D., & Heydarian, A. (2021, July 21). Benchmarking the Use of Immersive Virtual Bike Simulators for Understanding Cyclist Behaviors. https://doi.org/10.31224/osf.io/mrxgh
-
-
-
 ## Prerequisite
 
 1.  [HTC VIVE Eye Pro](https://www.vive.com/us/product/vive-pro/) with Tobii Eye Tracking system
@@ -143,6 +136,18 @@ The three python scripts under 'EyeTrackingProcess' folder provides a workflow o
 - [3.Img2video.py](EyeTrackingProcess/3.Img2video.py) collects all the images and convert them back to a video with gaze like the sample output video in '\Data\Video\4.Gazevideos_out\movie2020-08-2818h08m.mp4'.
 
 
+## Citation
+If you find the repo is useful, please cite our work https://engrxiv.org/mrxgh/
+
+@misc{guo_robartes_angulo_chen_heydarian_2021,
+ title={Benchmarking the Use of Immersive Virtual Bike Simulators for Understanding Cyclist Behaviors},
+ url={engrxiv.org/mrxgh},
+ DOI={10.31224/osf.io/mrxgh},
+ publisher={engrXiv},
+ author={Guo, Xiang and Robartes, Erin M and Angulo, Austin and Chen, T. D and Heydarian, Arsalan},
+ year={2021},
+ month={Jul}
+}
 
 
 
