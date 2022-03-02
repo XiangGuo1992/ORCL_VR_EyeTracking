@@ -148,6 +148,14 @@ If you find the repo is useful, please cite our work https://engrxiv.org/mrxgh/
   year={2021},
   month={Jul}
  }
+ 
+ @article{guo2021orclsim,
+  title={ORCLSim: A System Architecture for Studying Bicyclist and Pedestrian Physiological Behavior Through Immersive Virtual Environments},
+  author={Guo, Xiang and Angulo, Austin and Robartes, Erin and Chen, T Donna and Heydarian, Arsalan},
+  journal={arXiv preprint arXiv:2112.03420},
+  year={2021}
+}
+
 ```
 
 
