@@ -120,6 +120,9 @@ The advantage of the this method is that it can integrate different video collec
 
 ![video_collection](img/video_collection.png)
 
+A sample video in youtube about our experiment:
+[Pedestrian crossing using smartphone app](https://www.youtube.com/watch?v=Q_LUoIZuPKs) 
+
 ## Sample scene
 
 So far, we have already set up everything for data collection. For your convenience, I also upload a sample Unity scene for the whole process, the Google Drive Link to it is [here](https://drive.google.com/open?id=19ZlllVUZl2mWyRrg6JSof5vrMZ5ZkCz5).
