@@ -75,7 +75,7 @@ To start with, read the document from Tobii Pro SDK (http://developer.tobiipro.c
 
 **2021.05.24 update**: The correct experimental order is:
 
-1. Open SteamVR;
+1. Connect VIVE Pro Eye to your computer(in our case we have wireless connection), open VIVE wireless and SteamVR;
 2. Run room setup, make sure the controllers and headsets are in the right place;
 3. Run [eye calibration](https://developer.vive.com/us/support/sdk/category_howto/how-to-calibrate-eye-tracking.html#:~:text=Connect%20VIVE%20Pro%20Eye%20to%20your%20computer.%20Turn,the%20IPD.%20Follow%20the%20dot%20with%20your%20eyes) in HTC VIVE PRO EYE; 
 4. Open Unity scenarios;
