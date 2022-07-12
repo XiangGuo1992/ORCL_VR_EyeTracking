@@ -145,7 +145,7 @@ The three python scripts under 'EyeTrackingProcess' folder provides a workflow o
 
 
 ## Citation
-If you want to explore more details or find the repo is useful, please cite our work https://arxiv.org/abs/2112.03420 and https://engrxiv.org/mrxgh/.
+If you want to explore more details or find the repo is useful, please cite our work https://arxiv.org/abs/2112.03420, https://engrxiv.org/mrxgh/. https://ascelibrary.org/doi/abs/10.1061/9780784483893.161#:~:text=By%20benchmarking%20cyclists%E2%80%99%20behaviors%20and%20perceived%20safety%20in,IVE%20simulators%20are%20realistic%20representations%20of%20real-world%20conditions.
 ```tex
  @article{guo2021orclsim,
   title={ORCLSim: A System Architecture for Studying Bicyclist and Pedestrian Physiological Behavior Through Immersive Virtual Environments},
@@ -155,16 +155,12 @@ If you want to explore more details or find the repo is useful, please cite our 
 }
 
 
- @misc{guo_robartes_angulo_chen_heydarian_2021,
+@incollection{guo2021benchmarking,
   title={Benchmarking the Use of Immersive Virtual Bike Simulators for Understanding Cyclist Behaviors},
-  url={engrxiv.org/mrxgh},
-  DOI={10.31224/osf.io/mrxgh},
-  publisher={engrXiv},
-  author={Guo, Xiang and Robartes, Erin M and Angulo, Austin and Chen, T. D and Heydarian, Arsalan},
-  year={2021},
-  month={Jul}
- }
- 
+  author={Guo, Xiang and Robartes, Erin and Angulo, Austin and Chen, T Donna and Heydarian, Arsalan},
+  booktitle={Computing in Civil Engineering 2021},
+  pages={1319--1326}
+}
 
 ```
 
