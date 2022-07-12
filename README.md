@@ -8,7 +8,7 @@ This repository comes with the code for Tobii Eye Tracking integrated in [HTC VI
 
 ![ORCL logo](img/ORCL_logo.jpg)
 
-**Update** 
+## **IMPORTANT UPDATE** 
 Tobii Pro SDK In version 1.9 the VR support was deprecated.https://developer.tobiipro.com/unity/unity-getting-started.html
 
 In order to make everything work, you may download our test scene with compatible Tobii Pro SDK version integrated [here](https://drive.google.com/open?id=19ZlllVUZl2mWyRrg6JSof5vrMZ5ZkCz5). If you choose to use our test scene, please skip the Tobii SDK Pro set up steps (other steps are still necessary).
