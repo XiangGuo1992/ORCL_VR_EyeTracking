@@ -150,13 +150,25 @@ The three python scripts under 'EyeTrackingProcess' folder provides a workflow o
 ## Citation
 If you want to explore more details or find the repo is useful, please cite our work https://arxiv.org/abs/2112.03420, https://arxiv.org/abs/2202.13468 and https://ascelibrary.org/doi/abs/10.1061/9780784483893.161.
 ```tex
- @article{guo2021orclsim,
-  title={ORCLSim: A System Architecture for Studying Bicyclist and Pedestrian Physiological Behavior Through Immersive Virtual Environments},
-  author={Guo, Xiang and Angulo, Austin and Robartes, Erin and Chen, T Donna and Heydarian, Arsalan},
-  journal={arXiv preprint arXiv:2112.03420},
-  year={2021}
-}
 
+@Article{Guo2022,
+author={Guo, Xiang
+and Angulo, Austin
+and Robartes, Erin
+and Chen, T. Donna
+and Heydarian, Arsalan},
+title={ORCLSim: A System Architecture for Studying Bicyclist and Pedestrian Physiological Behavior through Immersive Virtual Environments},
+journal={Journal of Advanced Transportation},
+year={2022},
+month={Aug},
+day={04},
+publisher={Hindawi},
+volume={2022},
+pages={2750369},
+issn={0197-6729},
+doi={10.1155/2022/2750369},
+url={https://doi.org/10.1155/2022/2750369}
+}
 
 @incollection{guo2021benchmarking,
   title={Benchmarking the Use of Immersive Virtual Bike Simulators for Understanding Cyclist Behaviors},
