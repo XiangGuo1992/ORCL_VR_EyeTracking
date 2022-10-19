@@ -84,7 +84,9 @@ To start with, read the document from Tobii Pro SDK (http://developer.tobiipro.c
 3. Run [eye calibration](https://developer.vive.com/us/support/sdk/category_howto/how-to-calibrate-eye-tracking.html#:~:text=Connect%20VIVE%20Pro%20Eye%20to%20your%20computer.%20Turn,the%20IPD.%20Follow%20the%20dot%20with%20your%20eyes) in HTC VIVE PRO EYE; 
 4. Open Unity scenarios;
 5. **Start or Restart** the **SR runtime software** right before playing the scene (wait until the small robot icon turns orange as shown in the figure below), this can ensure the data collection is working in case you have empty XML data;
+
 ![SR runtime status check](img/SR_runtime_icon.png)
+
 6. Play the scene in Unity;
 7. Stop the scene to see if all the data are collected
 
