@@ -148,7 +148,7 @@ The three python scripts under 'EyeTrackingProcess' folder provides a workflow o
 
 
 ## Citation
-If you want to explore more details or find the repo is useful, please cite our work https://arxiv.org/abs/2112.03420, https://arxiv.org/abs/2202.13468 and https://ascelibrary.org/doi/abs/10.1061/9780784483893.161.
+If you want to explore more details or find the repo is useful, please cite our work https://www.hindawi.com/journals/jat/2022/2750369/, https://arxiv.org/abs/2202.13468 and https://ascelibrary.org/doi/abs/10.1061/9780784483893.161.
 
 1. Guo, X., Angulo, A., Robartes, E., Chen, T. D. & Heydarian, A. Orclsim: A system architecture for studying bicyclist
 and pedestrian physiological behavior through immersive virtual environments. J. Adv. Transp. 2022, 2750369, DOI:
